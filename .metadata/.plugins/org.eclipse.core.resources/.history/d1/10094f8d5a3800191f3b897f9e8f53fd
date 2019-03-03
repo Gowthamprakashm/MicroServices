@@ -1,0 +1,17 @@
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+server.port=9000
+
+zuul.routes.login-server.path=/login/**
+zuul.routes.login-server.service-id=EKART-LOGINSERVICE
+#zuul.routes.login-server.url=http://localhost:8082/login-server/
+
+
+zuul.routes.registration-server.path=/register/**
+zuul.routes.registration-server.service-id=EKART-REGISTRATIONSERVICE
+
+
+zuul.routes.item-server.path=/items/**
+zuul.routes.item-server.service-id=EKART-ITEMSERVICE
+
+spring.application.name=EKart-DiscoveryService

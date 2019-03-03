@@ -1,0 +1,7 @@
+eureka.client.service-url.defaultZone= http://localhost:8761/eureka
+eureka.client.register-with-eureka=true
+server.port=9000
+
+zuul.routes.login-server.serviceId=Ekart-LoginService
+
+spring.application.name=EKart-DiscoveryServer
